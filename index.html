@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="inputs">
+					<div class="day-input">
+						<label for="day" id="day-label">Kun</label>
+						<input type="number" name="day" id="day" placeholder="Kun" />
+						<span class="error-day">Must be a valid day</span>
+					</div>
+					<div class="month-input">
+						<label for="month" id="month-label">Oy</label>
+						<input type="number" name="month" id="month" placeholder="Oy" />
+						<span class="error-month">Must be a valid month</span>
+					</div>
+					<div class="year-input">
+						<label for="year" id="year-label">YIl</label>
+						<input type="number" name="year" id="year" placeholder="Yil" />
+						<span class="error-year">Must be in the past</span>
+					</div>
+				</div>
+				<div class="middle">
+					<div class="line"></div>
+					<button id="submitBtn" title="Submit" class="circle">
+						<img src="./img/icon-arrow.svg" alt="submit arrow icon" />
+					</button>
+				</div>
+				<div class="results">
+					<div class="result">
+						<span id="years-result">--</span>
+						<i>YIL</i>
+					</div>
+					<div class="result">
+						<span id="months-result">--</span>
+						<i>OY</i>
+					</div>
+					<div class="result">
+						<span id="days-result">--</span>
+						<i>KUN</i>
+					</div>
+				</div>
+			</div>		
+		</main>
+		<script src="./index.js"></script>
+	</body>
+</html>
